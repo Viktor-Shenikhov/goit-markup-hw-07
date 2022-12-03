@@ -91,6 +91,22 @@ border-radius: 0px;
    transition-duration: $duration;
    transition-timing-function: $timing-function;
 
+   &:hover,
+   &:focus{
+   background: $color-hover;
+   }
+
+   &:hover{
+      .name__img{
+         fill: #FFFFFF;
+      }
+   }
+   &:focus{
+      .name__img{
+        fill: #FFFFFF; 
+      }
+   }
+
 }
 
 .name__img{
@@ -106,15 +122,15 @@ fill: #FFFFFF;
 
 }  */
 
-.name__icon:hover,
-.name__icon:focus{
-background: $color-hover;
+// .name__icon:hover,
+// .name__icon:focus{
+// background: $color-hover;
+// }
 
 
-}
-.name__icon:hover .name__img,
-.name__icon:focus .name__img{
-   fill: #FFFFFF;
-}
+// .name__icon:hover .name__img,
+// .name__icon:focus .name__img{
+//    fill: #FFFFFF;
+// }
 
 

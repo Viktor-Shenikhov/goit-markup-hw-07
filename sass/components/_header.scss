@@ -78,25 +78,30 @@ color: $title-color;
    transition-property: color, transform;
    transition-duration: $duration;
    transition-timing-function: $timing-function;
+
+   &:hover,
+   &:focus{
+  color:$color-hover;
+   }
  }
  .navigation__line{
 position: relative;
 
 
 } 
-.navigation__link:hover, 
- .navigation__link:focus{ 
-   color:$color-hover;  
+// .navigation__link:hover, 
+//  .navigation__link:focus{ 
+//    color:$color-hover;  
    
- }
+//  }
 
 
  .navigation__portfolio,
  .navigation__studio{
    color: $color-hover;
  }
- .navigation__portfolio:after,
- .navigation__studio:after{
+ .navigation__portfolio::after,
+ .navigation__studio::after{
    content: "";
    position: absolute;
    left:0;

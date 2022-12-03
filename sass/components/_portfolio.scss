@@ -11,18 +11,28 @@ margin-bottom: 34px;
 .portfolio-nav__item{
 display: block;
 
-}
-.portfolio-nav__item:last-child{
-   margin-right: 0;
-}
-.portfolio-nav__item:hover,
-.portfolio-nav__item:focus{
+&:hover,
+&:focus {
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
 transition-property: transform;
 transition-duration: $duration;
 transition-timing-function: $timing-function;
+
 }
+
+}
+.portfolio-nav__item:last-child{
+   margin-right: 0;
+}
+// .portfolio-nav__item:hover,
+// .portfolio-nav__item:focus{
+// box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+// border-radius: 4px;
+// transition-property: transform;
+// transition-duration: $duration;
+// transition-timing-function: $timing-function;
+// }
 
 .portfolio-nav__btn{
  padding: 6px 22px;
@@ -42,13 +52,21 @@ border-radius: 4px;
 transition-property: background-color, color, transform;
 transition-duration: $duration;
 transition-timing-function: $timing-function;
-}
-.portfolio-nav__btn:hover,
-.portfolio-nav__btn:focus{
- color:  #FFFFFF;
+
+&:hover,
+&:focus{
+color:  #FFFFFF;
  background: $color-hover;
- 
 }
+}
+
+// }
+// .portfolio-nav__btn:hover,
+// .portfolio-nav__btn:focus{
+//  color:  #FFFFFF;
+//  background: $color-hover;
+ 
+// }
 
 .portfolio-list{
    display: flex;
@@ -61,7 +79,11 @@ transition-timing-function: $timing-function;
    border: 1px solid #EEEEEE;
     transition-property: box-shadow, transform;
     transition-duration: $duration;
-    transition-timing-function: $timing-function;  
+    transition-timing-function: $timing-function; 
+    
+    &:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
    
 } 
 
@@ -131,10 +153,10 @@ transition-timing-function: $timing-function;
      
 }
   
- .portfolio-box:hover{
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+//  .portfolio-box:hover{
+// box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
-} 
+// } 
 .portfolio-box:hover .portfolio-box__overlay::before{
 transform: translateY(0);
 } 

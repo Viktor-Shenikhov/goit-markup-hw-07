@@ -43,12 +43,17 @@
    transition: fill, transform;
    transition-duration: $duration;
    transition-timing-function: $timing-function; 
+
+    &:hover,
+    &:focus{
+     fill: $color-hover;
+    }
 }  
 
-.modal__btn--closed:hover,
-.modal__btn--closed:focus{
-   fill: $color-hover;
-}
+// .modal__btn--closed:hover,
+// .modal__btn--closed:focus{
+//    fill: $color-hover;
+// }
 .modal__form{
    display: flex;
    flex-direction: column;
@@ -85,14 +90,19 @@ border-radius: 4px;
 padding-left: 42px;
 transition-property: border-color, box-shadow, fill, transform;
 transition-duration: $duration;
-transition-timing-function: $timing-function;  
+transition-timing-function: $timing-function; 
+
+&:focus{
+ border-color: $color-hover;
+ box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);  
+}
 
 }
-  .modal__fields:focus{
-border-color: $color-hover;
-/* fill: #2196F3;  */
- box-shadow: 0px 4px 4px rgb(0 0 0 / 15%); 
-} 
+//   .modal__fields:focus{
+// border-color: $color-hover;
+// /* fill: #2196F3;  */
+//  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%); 
+// } 
 
 .modal__icon{
    position: absolute;
@@ -138,12 +148,17 @@ font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
+
+&:focus{
+  border-color: $color-hover;
+ box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);  
+}
 }
 
-.modal__comment:focus{
- border-color: $color-hover;
- box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);   
-}
+// .modal__comment:focus{
+//  border-color: $color-hover;
+//  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);   
+// }
 
 
 
